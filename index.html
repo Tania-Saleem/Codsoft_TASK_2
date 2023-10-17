@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href=" https://getbootstrap.com/docs/5.0/extend/icons/ "/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.com/libraries/font-awesome"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+
+    <title>My Portfolio!</title>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Tania Saleem</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Experiace">Experience</a></li>
+          <li><a href="#Project">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+<!-- mobile nav section -->
+
+<nav id="hamburger-nav">
+  <div class="logo">Tania Saleem</div>
+  <div class="hamburger-manu">
+    <div class="hamburger-icon" onclick="toggleManu()">
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </div>
+    <div class="manu-links">
+      <li><a href="#About" onclick="toggleMenu()">About</a></li>
+      <li><a href="#Experiace" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#Project" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+  </div>
+  </div>
+</nav>
+
+
+<!-- Profile -->
+<section id="Profile">
+     <div class="container container_profile">
+      <div class="col-6">
+        <img src="./assets/blank-profile-picture-973460_1280.png" alt="profile picture"  class="img-fluid rounded-circle profile_img">
+      </div>
+      <div class="col-6 ">
+        <div class="content_profile">
+        <div class="container_material">
+        <p>Hello,I'am</p>
+        <h1>TANIA SALEEM</h1>
+        <p>Frontend Developer</p></div>
+           <div class="btn">
+            <button class="btn btn1" onclick="openCV()">Download CV</button>
+            <button class="btn btn1">Contact Info</button>
+           </div>
+           <div class="logo_icon">
+           <img src="./assets/linkedIn.png" alt="linkedin_logo" class="img-fluid rounded-circle" height="40px" width="40px" onclick="openLinkedIn()">
+           <img src="./assets/git.png" alt="git_logo" class="img-fluid rounded-circle" height="40px" width="40px" onclick="openGitHub()">
+      
+          </div></div>
+     </div>
+</section>
+
+<!-- about me section -->
+<section id="About">
+<div class="text_About">
+  <p>Get To Know More</p>
+  <h1>About Me</h1>
+</div>
+  <div class="conatiner aboutMe">
+
+  <div class="col-4">
+    <img src="./assets/blank-profile-picture-973460_1280.png
+    " alt="profile" class="avatar">
+  </div>
+  <div class="col-8">
+    <div class="content_about">
+      <div class="col-4 border1">
+        <i class="fas fa-medal"></i>
+        <div class="abouttext">
+        <p>Experience</p>
+        <p>intern Level</p>
+        <p>FrontEnd Developer</p></div>
+      </div>
+      <div class="col-4 border1 ">
+        <i class="fas fa-university"></i>
+        <div class="abouttext">  <p>Education</p>
+        <p>BS Information and Technology</p>
+        <p>3rd year</p>
+      </div></div>
+    </div>
+    <div class="para">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloribus corrupti illo culpa itaque similique est debitis odit omnis ad odio a, aut commodi quos optio in, pariatur, alias voluptates.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<!-- Experiance -->
+<section id="Experiace">
+  <div class="container">
+    <div class="exp_text">
+      <p>Explore My</p>
+      <h1>Experience</h1>
+    </div>
+    <div class="row exp_col">
+      <div class="col-6">
+        <h4 class="h2_exp">FrontEnd Development</h4>
+        <div class="col6_exp">
+          
+            <div class="col-3">
+              <div class="col_3_text">
+                <i class="fas fa-check">&nbsp;HTML <p>Experience</p></i>
+                <i class="fas fa-check">&nbsp;SASS <p>Intermediate</p></i>
+                <i class="fas fa-check">&nbsp;TypeScript <p>Basic</p></i>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="col_3_text">
+                <i class="fas fa-check">&nbsp;CSS <p>Experience</p></i>
+                <i class="fas fa-check">&nbsp;JavaScript <p>Intermediate</p></i>
+                <i class="fas fa-check">&nbsp;UI/UX <p>Basic</p></i>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+      <div class="col-6">
+        <h4 class="h2_exp">BackEnd Development</h4>
+        <div class="col6_exp">
+          
+            <div class="col-3">
+              <i class="fas fa-check">&nbsp;SQL <p>Experience</p></i>
+              <i class="fas fa-check">&nbsp;Express JS <p>Intermediate</p></i>
+            </div>
+            <div class="col-3">
+              <i class="fas fa-check">&nbsp;Git <p>Experience</p></i>
+              <i class="fas fa-check">&nbsp;Node JS <p>Intermediate</p></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- section projects -->
+<section id="Project">
+<div class="project_text">
+<p>Browse My Recent</p>
+<h1>Projects</h1>
+</div>
+<div class="card_container">
+  <div class="card">
+    <img src="./assets/music-1813100_1280.png" alt="smartphone" style="width: 100%;">
+    <div class="container">
+      <h4><b>Music App</b></h4>
+      <p>Listen & download</p>
+    </div>
+  </div>
+<div class="card">
+  <img src="./assets/smartphone-1184865_1280.png" alt="smartphone" style="width: 100%;">
+  <br>
+  <br>
+  <div class="container">
+    <h4><b>Web App</b></h4>
+    <p>Reading App</p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="./assets/smartphone-1184883_1280.png" alt="smartphone" style="width: 100%;">
+  <div class="container">
+    <h4><b>Noval App</b></h4>
+    <p>Write your Own World</p>
+  </div>
+</div>
+</div>
+</section>
+
+
+<!-- section contact Me -->
+<section id="Contact">
+        <div class="contactMe">
+          <div class="contentText">
+            <p>Get in Touch</p>
+            <h1>Contact Me</h1>
+          </div>
+          <div class="contactRound">
+            
+            <div class="contact_icon">
+              <i class="fas fa-mail-bulk"> </i><p>Example@email.com</p>
+              
+            </div>
+            
+            <div class="contact_icon" >
+              <i class="fab fa-linkedin"></i><p>LinkedIn</p> 
+              
+            </div>
+          </div>
+        </div>
+</section>
+
+
+  <footer>
+    <div class="copyright">
+      <p>&copy; 2023 Your Tania Saleem or CodSoft. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+<script src="script.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+  </body>
+</html>
